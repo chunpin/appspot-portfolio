@@ -2,7 +2,7 @@
 
 
 site structure:
-
+root/
 	public/
 			js/
 				helper.js
@@ -20,4 +20,5 @@ site structure:
 	README.md
 
 
-currently due to the upload  failure problem of unknown site structure, 
+currently due to the git statging failure problem of unknown site structure, therefor decontructed the public folder files in to the root folder,
+when is ready to deply, please recover the entire site structure as description above. 
