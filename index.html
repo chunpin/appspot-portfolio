@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+
+  <meta charset="utf-8">
+  <title>Web Designer Resume-CHUN PIN CHEN</title>
+  <meta name="description" content="Ich bin gebürtiger Taiwaner, habe in meinem Heimatland “Information & Kommunikation” studiert, und mit einem Bachelor abgeschlossen. In meiner Heimat arbeitete ich 4 Jahre lang in einem damals sehr bekanntem Medien-Design Studio.">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+<body unresolved>
+  <div id="main">
+    
+       <!-- You'll be deleting this line in the course -->
+
+    <!--
+    Everything from here to the <script> tag below is the skeleton of website. figure out what each section will display by looking at the id or at what's written between the <h2> tags.
+    -->
+<div id="header" class="center-content clearfix">
+   <h1 id="name">CHUN PIN CHEN</h1>
+   <span>Designer & Front End Web Developer</span>
+   <hr>
+
+   <ul id="topContacts" class="flex-box">
+      <li class="flex-item"><span class="orange-text">Abschluss</span><span class="white-text">Bachelor of Information and Communication</span></li>
+      <li class="flex-item"><span class="orange-text">Email</span><span class="white-text">james19840628@gmail.com</span></li>
+      <li class="flex-item"><span class="orange-text">Wohnhaft</span><span class="white-text">Rosenheim, Deutschland</span></li>
+   </ul>
+   
+   <img src="images/persoanl_picture.jpg" class="biopic"><span class="welcome-message">Ich bin gebürtiger Taiwaner, habe in meinem Heimatland “Information Kommunikation” studiert, und mit einem Bachelor abgeschlossen. Danach arbeitete ich 4 Jahre lang in einem namhaften Medien-Design Studio. 2013 verschlug es mich nach Deutschland, seit Juli 2015 bin ich hier als Webdesigner und Frontend Developer tätig. </span>
+
+   <h3 id="skillsH3">Skills at a Glance:</h3>
+   <ul id="skills" class="flex-box">
+     <li class="flex-item"><span class="white-text">Grafik Design</span></li>
+     <li class="flex-item"><span class="white-text">Web Design</span></li>
+     <li class="flex-item"><span class="white-text">Sketch</span></li>
+     <li class="flex-item"><span class="white-text">Photoshop</span></li>
+     <li class="flex-item"><span class="white-text">Illustrator</span></li>
+     <li class="flex-item"><span class="white-text">HTML</span></li>
+     <li class="flex-item"><span class="white-text">CSS</span></li>
+     <li class="flex-item"><span class="white-text">Vanilla Javascript</span></li>
+   </ul>
+
+   <h3 id="languagesH3">Build Tool & Framework</h3>
+   <ul id="skills" class="flex-box">
+     <li class="flex-item"><span class="white-text">Gulp</span></li>
+     <li class="flex-item"><span class="white-text">Scss</span></li>
+     <li class="flex-item"><span class="white-text">Meteor.js</span></li>
+     <li class="flex-item"><span class="white-text">Bootstrap</span></li>
+     <li class="flex-item"><span class="white-text">Jquery</span></li>
+   </ul>
+   
+   <h3 id="languagesH3">Mehrsprachig:</h3>
+
+   <ul id="languages" class="flex-box">
+     <li class="flex-item"><span class="white-text">English</span></li>
+     <li class="flex-item"><span class="white-text">Taiwanesisch</span></li>
+     <li class="flex-item"><span class="white-text">Chinesisch</span></li>
+     <li class="flex-item"><span class="white-text">Deutsch</span></li>
+   </ul>
+   
+</div>
+    <div style='clear: both;'></div>
+    <div id="workExperience" class='gray'>
+      <h2>Anstellungen</h2>
+    </div>
+    <div id="projects">
+      <h2>Projekte</h2>
+    </div>
+    <div id="education" class='gray'>
+      <h2>Ausbildung</h2>
+    </div>
+    <div id="mapDiv">
+      <h2>Wo ich bereits gewohnt und gearbeitet habe</h2>
+    </div>    
+    <div id="letsConnect" class='dark-gray'>
+      <h2 class='orange center-text'><a href="#main">Let's Connect</a></h2>
+        <ul id="footerContacts" class="flex-box">
+      </ul>
+    </div>
+     
+  </div>
+
+
+  <script src="js/jQuery.js"></script>
+  <script src="js/helper.js"></script>
+    <!--
+   In resumeBuilder.js,it's for the code that builds the resume
+  dynamically when this website, index.html, is opened.
+  -->
+  <script src="js/resumeBuilder.js"></script>
+  <!--
+  this javascript section is for checking to see if the content has changed each section of the resume. if not made any changes to a section of the resume, then that part of the resume will be displying as black background or none.
+  -->
+  <script type="text/javascript">
+   
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.backgroundColor = "black";
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.backgroundColor = 'black';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.backgroundColor = 'black';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('letsConnect').style.display = "none";
+    }
+    if(document.getElementById('map') === null) { 
+      document.getElementById('mapDiv').style.display= "none";
+    }    
+  </script>
+</body>
+</html>

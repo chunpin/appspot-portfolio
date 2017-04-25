@@ -20,5 +20,4 @@ site structure:
 	README.md
 
 
-currently due to the upload  failure problem of folder's name "public", therefor for the quick solution , change folder's name to "public_forappspot",
-when it's ready to deploy onto the google app server. change the folders name back to "public".
+currently due to the upload  failure problem of unknown site structure, 
